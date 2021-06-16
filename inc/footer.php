@@ -86,5 +86,18 @@
 		  });
 		});
 	  </script>
+	  <script src="https://www.fireant.vn/Scripts/web/widgets.js"></script>
+<div id="fan-quote-802"></div>
+	<script type="text/javascript">
+		new FireAnt.MarketsWidget({
+			"container_id": "fan-quote-802",
+			"locale": "vi",
+			"price_line_color": "#71BDDF",
+			"grid_color": "#999999",
+			"label_color": "#999999",
+			"width": "350px",
+			"height": "250px"
+		});
+	</script>
 </body>
 </html>
