@@ -88,7 +88,7 @@
 	  </script>
 	  <script src="https://www.fireant.vn/Scripts/web/widgets.js"></script>
 <div id="fan-quote-802"></div>
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		new FireAnt.MarketsWidget({
 			"container_id": "fan-quote-802",
 			"locale": "vi",
@@ -98,6 +98,6 @@
 			"width": "350px",
 			"height": "250px"
 		});
-	</script>
+	</script> -->
 </body>
 </html>

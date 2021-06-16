@@ -33,6 +33,12 @@
                         <li><a href="sliderlist.php">Tất cả slider</a> </li>
                     </ul>
                 </li>
+                <li><a class="menuitem">Thông tin chứng khoán</a>
+                    <ul class="submenu">
+                        <li><a href="stock.php">Xem trực tiếp</a> </li>
+
+                    </ul>
+                </li>
 				 
                  
 				
