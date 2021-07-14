@@ -10,7 +10,7 @@ Class Database extends PDO{
    public $dbname = DB_NAME;
  
  
-   public $link;
+   public $link= new mysqli('52.6.114.59','user','123','web_ATN');
    public $error;
  
  public function __construct(){
