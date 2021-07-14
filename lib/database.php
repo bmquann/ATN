@@ -10,7 +10,7 @@ Class Database extends PDO{
    public $dbname = DB_NAME;
  
  
-   public $link=;
+   public $link;
    public $error;
  
  public function __construct(){
@@ -18,7 +18,8 @@ Class Database extends PDO{
  }
  
 private function connectDB(){
-   $this->link = new mysqli('52.6.114.59','user','123','web_ATN');
+   $this->link = new mysqli($this->host, $this->user, $this->pass, 
+    $this->dbname);
    if(!$this->link){
      $this->error ="Connection fail".$this->link->connect_error;
     return false;
