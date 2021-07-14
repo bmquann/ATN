@@ -4,10 +4,10 @@
 
 <?php
 Class Database extends PDO{
-   public $host   = '52.6.114.59';
-   public $user   = 'quan';
-   public $pass   = '123@123a';
-   public $dbname = 'ATN';
+   public $host   = DB_HOST;
+   public $user   = DB_USER;
+   public $pass   = DB_PASS;
+   public $dbname = DB_NAME;
  
  
    public $link;
@@ -17,8 +17,9 @@ Class Database extends PDO{
   $this->connectDB();
  }
  
-public function connectDB(){
-   $this->link = new mysqli($this->host, $this->user, $this->pass, $this->dbname);
+private function connectDB(){
+   $this->link = new mysqli($this->host, $this->user, $this->pass, 
+    $this->dbname);
    if(!$this->link){
      $this->error ="Connection fail".$this->link->connect_error;
     return false;
