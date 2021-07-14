@@ -1,20 +1,13 @@
 <?php 
     $filepath = realpath(dirname(__FILE__));
     include ($filepath.'/../config/config.php'); ?>
-<?php
-
-define('DB_HOST', '52.6.114.59');
-define('DB_USER', 'user');
-define('DB_PASS', '123');
-define('DB_NAME', 'web_ATN');
-?>
 
 <?php
 Class Database extends PDO{
-   public $host   = DB_HOST;
-   public $user   = DB_USER;
-   public $pass   = DB_PASS;
-   public $dbname = DB_NAME;
+  //  public $host   = DB_HOST;
+  //  public $user   = DB_USER;
+  //  public $pass   = DB_PASS;
+  //  public $dbname = DB_NAME;
  
  
    public $link;
@@ -25,8 +18,7 @@ Class Database extends PDO{
  }
  
 private function connectDB(){
-   $this->link = new mysqli($this->host, $this->user, $this->pass, 
-    $this->dbname);
+   $this->link = new mysqli('52.6.114.59','quan','123@123a','ATN');
    if(!$this->link){
      $this->error ="Connection fail".$this->link->connect_error;
     return false;
