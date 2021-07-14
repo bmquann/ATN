@@ -18,7 +18,8 @@ Class Database extends PDO{
  }
  
 private function connectDB(){
-   $this->link = new mysqli('52.6.114.59','quan','123@123a','ATN');
+   $this->link = new mysqli($this->host, $this->user, $this->pass, 
+    $this->dbname);
    if(!$this->link){
      $this->error ="Connection fail".$this->link->connect_error;
     return false;
