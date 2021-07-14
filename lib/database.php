@@ -4,10 +4,10 @@
 
 <?php
 Class Database extends PDO{
-   public $host   = DB_HOST;
-   public $user   = DB_USER;
-   public $pass   = DB_PASS;
-   public $dbname = DB_NAME;
+   public $host   = '52.6.114.59';
+   public $user   = 'quan';
+   public $pass   = '123@123a';
+   public $dbname = 'ATN';
  
  
    public $link;
