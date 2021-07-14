@@ -17,14 +17,14 @@ Class Database extends PDO{
   $this->connectDB();
  }
  
-private function connectDB(){
-   $this->link = new mysqli($this->host, $this->user, $this->pass, 
-    $this->dbname);
-   if(!$this->link){
-     $this->error ="Connection fail".$this->link->connect_error;
-    return false;
-   }
- }
+// private function connectDB(){
+//    $this->link = new mysqli($this->host, $this->user, $this->pass, 
+//     $this->dbname);
+//    if(!$this->link){
+//      $this->error ="Connection fail".$this->link->connect_error;
+//     return false;
+//    }
+//  }
  
 // Select or Read data
 public function select($query){
